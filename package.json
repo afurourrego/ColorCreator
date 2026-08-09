@@ -1,0 +1,45 @@
+{
+  "name": "colorcreator",
+  "version": "0.1.0",
+  "description": "Deterministic BasePaint palette generator, seeded by day number",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "colorcreator": "./dist/cli.js"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "basepaint",
+    "palette",
+    "color",
+    "colour",
+    "oklch",
+    "generative",
+    "deterministic",
+    "pixel-art"
+  ],
+  "author": "Juan Lopez <juan.lopez1@enovis.com>",
+  "license": "ISC",
+  "dependencies": {
+    "culori": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/culori": "^4.0.1",
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
